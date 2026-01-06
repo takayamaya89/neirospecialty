@@ -25,7 +25,7 @@ export function NeonCard({
     <Card
       className={cn(
         "bg-card text-card-foreground border transition-all duration-300",
-        hover && "hover:scale-[1.02]",
+        hover && "hover:scale-[1.02] hover:-translate-y-1",
         glowClasses[glow],
         className
       )}

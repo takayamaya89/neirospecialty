@@ -1,6 +1,7 @@
 import { NeonButton } from "@/components/NeonButton";
 import { NeonCard } from "@/components/NeonCard";
 import { AnimatedBackground } from "@/components/AnimatedBackground";
+import { StatusBadge } from "@/components/StatusBadge";
 import {
   Accordion,
   AccordionContent,
@@ -18,7 +19,7 @@ export default function Home() {
       {/* БЛОК 1: HERO */}
       <section className="container py-12 md:py-20 lg:py-28 relative z-10">
         <div className="text-center space-y-6 md:space-y-8">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-400 bg-clip-text text-transparent">
             НЕЙРО СПЕЦИАЛИЗАЦИИ
           </h1>
           <p className="text-lg md:text-xl lg:text-2xl text-muted-foreground max-w-3xl mx-auto">
@@ -139,7 +140,8 @@ export default function Home() {
           <AccordionItem value="spec-1" className="border-primary/30 mb-6">
             <NeonCard glow="pink" className="overflow-hidden">
               <AccordionTrigger className="px-6 md:px-8 py-6 hover:no-underline">
-                <div className="text-left w-full">
+                <div className="text-left w-full space-y-3">
+                  <StatusBadge variant="pink">Формируется группа</StatusBadge>
                   <h2 className="mb-2">ПРОДАЖИ И ЗАПУСКИ С ИИ</h2>
                   <p className="text-base md:text-lg text-muted-foreground font-normal">
                     Авторская система «Хакер Роста. Нейроверсия»
@@ -163,7 +165,7 @@ export default function Home() {
                     <p className="text-secondary font-semibold mb-4">
                       СТАТУС: Формируется группа: оставь заявку, чтобы попасть в следующий поток
                     </p>
-                    <p className="text-3xl font-bold mb-2">54 900 ₽</p>
+                    <p className="text-5xl font-bold mb-2 bg-gradient-to-r from-pink-500 to-purple-500 bg-clip-text text-transparent">54 900 ₽</p>
                     <p className="text-sm text-muted-foreground">
                       Количество мест в потоке ограничено. Возможна оплата частями.
                     </p>
@@ -237,7 +239,8 @@ export default function Home() {
           <AccordionItem value="spec-2" className="border-secondary/30 mb-6">
             <NeonCard glow="purple" className="overflow-hidden">
               <AccordionTrigger className="px-6 md:px-8 py-6 hover:no-underline">
-                <div className="text-left w-full">
+                <div className="text-left w-full space-y-3">
+                  <StatusBadge variant="purple">Формируется группа</StatusBadge>
                   <h2 className="mb-2">AI-КРЕАТОР: ФОТО, ВИДЕО, ЗВУК</h2>
                   <p className="text-base md:text-lg text-muted-foreground font-normal">
                     Самая ЯРКАЯ профессия 2026
@@ -261,7 +264,7 @@ export default function Home() {
                     <p className="text-secondary font-semibold mb-4">
                       СТАТУС: Формируется группа: оставь заявку, чтобы попасть в следующий поток
                     </p>
-                    <p className="text-3xl font-bold mb-2">39 900 ₽</p>
+                    <p className="text-5xl font-bold mb-2 bg-gradient-to-r from-purple-500 to-cyan-400 bg-clip-text text-transparent">39 900 ₽</p>
                     <p className="text-sm text-muted-foreground">
                       Возможна поэтапная оплата. Количество мест в потоке ограничено.
                     </p>
@@ -332,7 +335,8 @@ export default function Home() {
           <AccordionItem value="spec-3" className="border-accent/30 mb-6">
             <NeonCard glow="cyan" className="overflow-hidden">
               <AccordionTrigger className="px-6 md:px-8 py-6 hover:no-underline">
-                <div className="text-left w-full">
+                <div className="text-left w-full space-y-3">
+                  <StatusBadge variant="cyan">Формируется группа</StatusBadge>
                   <h2 className="mb-2">БОТЫ, АВТОМАТИЗАЦИЯ И ВАЙБ-КОДИНГ</h2>
                   <p className="text-base md:text-lg text-muted-foreground font-normal">
                     Самая технологичная и самая высокооплачиваемая профессия
@@ -356,7 +360,7 @@ export default function Home() {
                     <p className="text-accent font-semibold mb-4">
                       СТАТУС: Формируется группа: оставь заявку, чтобы попасть в следующий поток
                     </p>
-                    <p className="text-3xl font-bold mb-2">64 900 ₽</p>
+                    <p className="text-5xl font-bold mb-2 bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">64 900 ₽</p>
                     <p className="text-sm text-muted-foreground">
                       Возможна рассрочка. Количество мест ограничено технически — важен качественный разбор каждого проекта.
                     </p>
@@ -469,16 +473,16 @@ export default function Home() {
 
       {/* БЛОК 7: СПЕЦПРЕДЛОЖЕНИЕ */}
       <section className="container py-12 md:py-16 relative z-10">
-        <NeonCard glow="pink" className="p-8 md:p-12 max-w-4xl mx-auto">
+        <NeonCard glow="pink" className="p-8 md:p-12 max-w-4xl mx-auto border-2">
           <h2 className="text-center mb-6">Я хочу NEIROMASTER и Специализацию!</h2>
           <p className="text-center text-lg mb-6">
             При покупке NEIROMASTER + специализация
-            вы получаете скидку 15% от общего чека
+            вы получаете скидку <span className="text-5xl font-bold bg-gradient-to-r from-pink-500 to-purple-500 bg-clip-text text-transparent">15%</span> от общего чека
           </p>
           <div className="bg-background/50 p-6 rounded-lg mb-6">
             <p className="text-center">
-              Например: «NEIROMASTER + любая специализация = от 50 000 ₽. Скидка 15% — вы
-              экономите более 10 000 ₽ и сразу выстраиваете путь: база ИИ → узкая профессия →
+              Например: «НЕЙРОМАСТЕР + любая специализация = от <span className="font-bold text-xl">50 000 ₽</span>. Скидка 15% — вы
+              экономите более <span className="font-bold text-xl">10 000 ₽</span> и сразу выстраиваете путь: база ИИ → узкая профессия →
               высокий чек.»
             </p>
           </div>
@@ -548,31 +552,6 @@ export default function Home() {
             </AccordionContent>
           </AccordionItem>
         </Accordion>
-      </section>
-
-      {/* БЛОК 9: АВТОР КУРСА */}
-      <section className="container py-12 md:py-16 relative z-10">
-        <NeonCard glow="purple" className="p-8 md:p-12 max-w-4xl mx-auto">
-          <div className="text-center space-y-4">
-            <h2 className="mb-4">Майя Галицкая</h2>
-            <div className="space-y-2 text-lg">
-              <p>Маркетолог с 15+ лет опыта, топовый AI-практик</p>
-              <p>Создатель самых продающих курсов по нейросетям в СНГ</p>
-              <p>Более 10 000 учеников прошли обучения</p>
-              <p>Тренер MBA, CMO</p>
-              <p>Спикер форумов и мастер-классов для государственных структур</p>
-            </div>
-            <p className="text-muted-foreground pt-4">
-              Автор NEIROMASTER и линейки нейроспециализаций, которые помогают ученикам
-              выходить на новые профессии и рост дохода за счёт ИИ, а не за счёт выгорания.
-            </p>
-            <div className="pt-6">
-              <NeonButton variant="primary">
-                Хочу учиться у Майи
-              </NeonButton>
-            </div>
-          </div>
-        </NeonCard>
       </section>
 
       {/* ПОДВАЛ */}
