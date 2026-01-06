@@ -77,31 +77,31 @@ export default function Home() {
         
         <div className="space-y-4 md:space-y-6 max-w-5xl mx-auto mb-8">
           <NeonCard glow="pink" className="p-6 md:p-8">
-            <p className="mb-3">
-              <strong>Если ты уже прошёл NEIROMASTER и хочешь масштабировать доход на запусках
-              и воронках</strong>
+            <p className="mb-3 text-base md:text-lg">
+              <strong>Если ты уже в бизнесе, продажах, маркетинге или хочешь запускать свои
+              проекты</strong>
             </p>
-            <p className="text-primary">
+            <p className="text-primary text-base md:text-lg font-semibold">
               → Тебе нужна специализация «ПРОДАЖИ И ЗАПУСКИ С ИИ».
             </p>
           </NeonCard>
 
           <NeonCard glow="purple" className="p-6 md:p-8">
-            <p className="mb-3">
+            <p className="mb-3 text-base md:text-lg">
               <strong>Если тебе важна визуалка, контент, бренды и UGC, хочешь портфолио, которое
               покупают</strong>
             </p>
-            <p className="text-secondary">
+            <p className="text-secondary text-base md:text-lg font-semibold">
               → Тебе нужна специализация «AI-КРЕАТОР: ФОТО, ВИДЕО, ЗВУК».
             </p>
           </NeonCard>
 
           <NeonCard glow="cyan" className="p-6 md:p-8">
-            <p className="mb-3">
+            <p className="mb-3 text-base md:text-lg">
               <strong>Если хочешь самые высокие чеки, технику, ботов и автоматизацию процессов
               под бизнес</strong>
             </p>
-            <p className="text-accent">
+            <p className="text-accent text-base md:text-lg font-semibold">
               → Тебе нужна специализация «БОТЫ, АВТОМАТИЗАЦИЯ И ВАЙБ-КОДИНГ».
             </p>
           </NeonCard>
