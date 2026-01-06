@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @import "tw-animate-css";
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap');
 
 @custom-variant dark (&:is(.dark *));
 
@@ -43,39 +44,45 @@
 }
 
 :root {
-  --primary: var(--color-blue-700);
-  --primary-foreground: var(--color-blue-50);
-  --sidebar-primary: var(--color-blue-600);
-  --sidebar-primary-foreground: var(--color-blue-50);
-  --chart-1: var(--color-blue-300);
-  --chart-2: var(--color-blue-500);
-  --chart-3: var(--color-blue-600);
-  --chart-4: var(--color-blue-700);
-  --chart-5: var(--color-blue-800);
+  /* Неоновые цвета для темной темы - основная версия */
+  --primary: oklch(0.72 0.25 330); /* #FF4FD8 - розовый неон */
+  --primary-foreground: oklch(0.98 0 0);
+  --secondary: oklch(0.65 0.22 280); /* #7B61FF - фиолетовый неон */
+  --secondary-foreground: oklch(0.98 0 0);
+  --accent: oklch(0.85 0.15 200); /* #6AF0FF - холодный неон */
+  --accent-foreground: oklch(0.15 0.01 280);
+  
+  --sidebar-primary: oklch(0.65 0.22 280);
+  --sidebar-primary-foreground: oklch(0.98 0 0);
+  --chart-1: oklch(0.72 0.25 330);
+  --chart-2: oklch(0.65 0.22 280);
+  --chart-3: oklch(0.85 0.15 200);
+  --chart-4: oklch(0.55 0.18 280);
+  --chart-5: oklch(0.62 0.22 330);
   --radius: 0.65rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.235 0.015 65);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.235 0.015 65);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.235 0.015 65);
-  --secondary: oklch(0.98 0.001 286.375);
-  --secondary-foreground: oklch(0.4 0.015 65);
-  --muted: oklch(0.967 0.001 286.375);
-  --muted-foreground: oklch(0.552 0.016 285.938);
-  --accent: oklch(0.967 0.001 286.375);
-  --accent-foreground: oklch(0.141 0.005 285.823);
+  
+  /* Темный фон - основная версия */
+  --background: oklch(0.12 0.01 280); /* #0B0B0F */
+  --foreground: oklch(0.98 0 0);
+  --card: oklch(0.15 0.01 280); /* #12121A */
+  --card-foreground: oklch(0.98 0 0);
+  --popover: oklch(0.15 0.01 280);
+  --popover-foreground: oklch(0.98 0 0);
+  
+  --muted: oklch(0.25 0.01 280);
+  --muted-foreground: oklch(0.65 0.01 280);
+  
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.985 0 0);
-  --border: oklch(0.92 0.004 286.32);
-  --input: oklch(0.92 0.004 286.32);
-  --ring: oklch(0.623 0.214 259.815);
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.235 0.015 65);
-  --sidebar-accent: oklch(0.967 0.001 286.375);
-  --sidebar-accent-foreground: oklch(0.141 0.005 285.823);
-  --sidebar-border: oklch(0.92 0.004 286.32);
-  --sidebar-ring: oklch(0.623 0.214 259.815);
+  --border: oklch(0.25 0.01 280);
+  --input: oklch(0.25 0.01 280);
+  --ring: oklch(0.72 0.25 330);
+  --sidebar: oklch(0.15 0.01 280);
+  --sidebar-foreground: oklch(0.98 0 0);
+  --sidebar-accent: oklch(0.25 0.01 280);
+  --sidebar-accent-foreground: oklch(0.98 0 0);
+  --sidebar-border: oklch(0.25 0.01 280);
+  --sidebar-ring: oklch(0.72 0.25 330);
 }
 
 .dark {
@@ -119,6 +126,82 @@
   }
   body {
     @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+  }
+  
+  /* Типографика согласно ТЗ */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 600;
+    line-height: 1.2;
+  }
+
+  h1 {
+    font-size: clamp(2.5rem, 5vw, 4rem); /* 40-64px адаптивно */
+    font-weight: 700;
+  }
+
+  h2 {
+    font-size: clamp(1.75rem, 3vw, 2.5rem); /* 28-40px адаптивно */
+    font-weight: 600;
+  }
+
+  h3 {
+    font-size: clamp(1.25rem, 2vw, 1.75rem); /* 20-28px адаптивно */
+    font-weight: 600;
+  }
+
+  p, span, div {
+    font-size: clamp(1rem, 1.5vw, 1.125rem); /* 16-18px адаптивно */
+    line-height: 1.6;
+  }
+  
+  /* Неоновые эффекты */
+  .glow-pink {
+    box-shadow: 0 0 20px rgba(255, 79, 216, 0.5),
+                0 0 40px rgba(255, 79, 216, 0.3),
+                0 0 60px rgba(255, 79, 216, 0.1);
+  }
+
+  .glow-purple {
+    box-shadow: 0 0 20px rgba(123, 97, 255, 0.5),
+                0 0 40px rgba(123, 97, 255, 0.3),
+                0 0 60px rgba(123, 97, 255, 0.1);
+  }
+
+  .glow-cyan {
+    box-shadow: 0 0 20px rgba(106, 240, 255, 0.5),
+                0 0 40px rgba(106, 240, 255, 0.3),
+                0 0 60px rgba(106, 240, 255, 0.1);
+  }
+  
+  /* Анимированный градиентный фон */
+  .animated-bg {
+    background: linear-gradient(
+      135deg,
+      #0B0B0F 0%,
+      #12121A 25%,
+      #1a1a28 50%,
+      #12121A 75%,
+      #0B0B0F 100%
+    );
+    background-size: 400% 400%;
+    animation: gradientShift 15s ease infinite;
+  }
+
+  @keyframes gradientShift {
+    0%, 100% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+  }
+  
+  /* Плавные переходы */
+  button, a, .interactive {
+    transition: all 0.3s ease;
   }
   button:not(:disabled),
   [role="button"]:not([aria-disabled="true"]),
