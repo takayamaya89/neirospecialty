@@ -150,6 +150,13 @@ export default function Home() {
               </AccordionTrigger>
               <AccordionContent className="px-6 md:px-8 pb-6">
                 <div className="space-y-6">
+                  {/* Блок наставника */}
+                  <div className="bg-primary/10 p-6 rounded-lg border border-primary/30">
+                    <h3 className="mb-3 text-primary font-semibold">Наставник специализации</h3>
+                    <p className="text-lg font-semibold">Майя Галицкая</p>
+                    <p className="text-muted-foreground">Автор курса</p>
+                  </div>
+
                   {/* Блок результата */}
                   <div className="bg-background/50 p-6 rounded-lg">
                     <h3 className="mb-4">После специализации ты:</h3>
@@ -249,6 +256,13 @@ export default function Home() {
               </AccordionTrigger>
               <AccordionContent className="px-6 md:px-8 pb-6">
                 <div className="space-y-6">
+                  {/* Блок наставника */}
+                  <div className="bg-secondary/10 p-6 rounded-lg border border-secondary/30">
+                    <h3 className="mb-3 text-secondary font-semibold">Наставник специализации</h3>
+                    <p className="text-lg font-semibold">Вероника Хацко</p>
+                    <p className="text-muted-foreground">Instagram: @by_veronika</p>
+                  </div>
+
                   {/* Блок результата */}
                   <div className="bg-background/50 p-6 rounded-lg">
                     <h3 className="mb-4">После специализации ты:</h3>
@@ -345,6 +359,13 @@ export default function Home() {
               </AccordionTrigger>
               <AccordionContent className="px-6 md:px-8 pb-6">
                 <div className="space-y-6">
+                  {/* Блок наставника */}
+                  <div className="bg-accent/10 p-6 rounded-lg border border-accent/30">
+                    <h3 className="mb-3 text-accent font-semibold">Наставник специализации</h3>
+                    <p className="text-lg font-semibold">Алена Лаптева</p>
+                    <p className="text-muted-foreground">Instagram: @alena.lapteva_</p>
+                  </div>
+
                   {/* Блок результата */}
                   <div className="bg-background/50 p-6 rounded-lg">
                     <h3 className="mb-4">После специализации ты:</h3>
