@@ -68,4 +68,4 @@
 - [x] Добавить ссылку https://course.takayamaya.ru/neiromaster_niche_test в кнопки "Помочь выбрать направление" и "Ответить на 3 вопроса и получить рекомендацию"
 - [x] Добавить ссылку http://neiromaster4.takayamaya.ru/ в кнопку "Вернуться к Neiromaster"
 - [x] Дополнить текст в блоке спецпредложения информацией о промокоде "КОМБО"
-- [ ] Опубликовать на GitHub в репозиторий neirospecialty аккаунта takayamaya89
+- [x] Опубликовать на GitHub в репозиторий neirospecialty аккаунта takayamaya89
