@@ -34,10 +34,18 @@ export default function Home() {
             следующий шаг — узкая специализация под высокий доход и сложные проекты.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-            <NeonButton variant="primary" className="text-sm md:text-base px-6 py-6">
+            <NeonButton 
+              variant="primary" 
+              className="text-sm md:text-base px-6 py-6"
+              onClick={() => window.open('https://course.takayamaya.ru/neiromaster_niche', '_blank')}
+            >
               Выбрать специализацию
             </NeonButton>
-            <NeonButton variant="secondary" className="text-sm md:text-base px-6 py-6">
+            <NeonButton 
+              variant="secondary" 
+              className="text-sm md:text-base px-6 py-6"
+              onClick={() => window.open('https://course.takayamaya.ru/neiromaster_niche_test', '_blank')}
+            >
               Помочь выбрать направление
             </NeonButton>
           </div>
@@ -108,7 +116,11 @@ export default function Home() {
         </div>
 
         <div className="text-center">
-          <NeonButton variant="accent" className="text-sm md:text-base px-6 py-6">
+          <NeonButton 
+            variant="accent" 
+            className="text-sm md:text-base px-6 py-6"
+            onClick={() => window.open('https://course.takayamaya.ru/neiromaster_niche_test', '_blank')}
+          >
             Ответить на 3 вопроса и получить рекомендацию
           </NeonButton>
         </div>
@@ -498,7 +510,7 @@ export default function Home() {
           <h2 className="text-center mb-6">Я хочу NEIROMASTER и Специализацию!</h2>
           <p className="text-center text-lg mb-6">
             При покупке NEIROMASTER + специализация
-            вы получаете скидку <span className="text-5xl font-bold bg-gradient-to-r from-pink-500 to-purple-500 bg-clip-text text-transparent">15%</span> от общего чека
+            вы получаете скидку <span className="text-5xl font-bold bg-gradient-to-r from-pink-500 to-purple-500 bg-clip-text text-transparent">15%</span> от общего чека по промокоду <span className="font-bold text-primary text-xl">"КОМБО"</span>
           </p>
           <div className="bg-background/50 p-6 rounded-lg mb-6">
             <p className="text-center">
@@ -508,10 +520,18 @@ export default function Home() {
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <NeonButton variant="primary" className="flex-1 sm:flex-none">
+            <NeonButton 
+              variant="primary" 
+              className="flex-1 sm:flex-none"
+              onClick={() => window.open('https://course.takayamaya.ru/neiromaster_niche', '_blank')}
+            >
               Я хочу NEIROMASTER и Специализацию
             </NeonButton>
-            <NeonButton variant="secondary" className="flex-1 sm:flex-none">
+            <NeonButton 
+              variant="secondary" 
+              className="flex-1 sm:flex-none"
+              onClick={() => window.open('http://neiromaster4.takayamaya.ru/', '_blank')}
+            >
               Вернуться к NEIROMASTER
             </NeonButton>
           </div>
