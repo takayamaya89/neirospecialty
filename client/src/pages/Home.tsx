@@ -153,7 +153,7 @@ export default function Home() {
             <NeonCard glow="pink" className="overflow-hidden">
               <AccordionTrigger className="px-6 md:px-8 py-6 hover:no-underline">
                 <div className="text-left w-full space-y-3">
-                  <StatusBadge variant="pink">Формируется группа</StatusBadge>
+                  <StatusBadge variant="pink">Старт 9 февраля 2026</StatusBadge>
                   <h2 className="mb-2">ПРОДАЖИ И ЗАПУСКИ С ИИ</h2>
                   <p className="text-base md:text-lg text-muted-foreground font-normal">
                     Авторская система «Хакер Роста. Нейроверсия»
@@ -259,7 +259,7 @@ export default function Home() {
             <NeonCard glow="purple" className="overflow-hidden">
               <AccordionTrigger className="px-6 md:px-8 py-6 hover:no-underline">
                 <div className="text-left w-full space-y-3">
-                  <StatusBadge variant="purple">Формируется группа</StatusBadge>
+                  <StatusBadge variant="purple">Старт 9 февраля 2026</StatusBadge>
                   <h2 className="mb-2">AI-КРЕАТОР: ФОТО, ВИДЕО, ЗВУК</h2>
                   <p className="text-base md:text-lg text-muted-foreground font-normal">
                     Самая ЯРКАЯ профессия 2026
@@ -362,7 +362,7 @@ export default function Home() {
             <NeonCard glow="cyan" className="overflow-hidden">
               <AccordionTrigger className="px-6 md:px-8 py-6 hover:no-underline">
                 <div className="text-left w-full space-y-3">
-                  <StatusBadge variant="cyan">Формируется группа</StatusBadge>
+                  <StatusBadge variant="cyan">Старт 9 февраля 2026</StatusBadge>
                   <h2 className="mb-2">БОТЫ, АВТОМАТИЗАЦИЯ И ВАЙБ-КОДИНГ</h2>
                   <p className="text-base md:text-lg text-muted-foreground font-normal">
                     Самая технологичная и самая высокооплачиваемая профессия
